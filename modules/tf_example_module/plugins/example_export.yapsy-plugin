@@ -1,0 +1,9 @@
+[Core]
+Name = Example Plugin
+Module = example_export
+
+[Documentation]
+Author = Mikael Fridh
+Version = 0.1
+Website = https://github.com/frimik/tf_module_plugin_example
+Description = Exemplifies an example
