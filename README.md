@@ -23,12 +23,18 @@ invoke data
 terraform plan
 ```
 
-## Concept explained
+## Plugin Concept explained
 
 * Each module provides a plugin method: `collect_data()`.
 * For each downloaded module, go through all found plugins and call `collect_data()`. Currently, method allows no input.
 * Plugin method is responsible for *populating*/*updating* the variables in the Terraform module.
 * Each module gets checked for diffs and notifies operator if data differs (git diff is hardcoded right now).
+
+### High-level Terraform view
+
+* Update the external? data for all modules
+* Terraform Plan/Apply
+* More Profit!
 
 ## TODO
 
